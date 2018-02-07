@@ -108,16 +108,16 @@ module.exports.loop = function () {
     if(harvesters.length < 2) {
         var newName = 'Harvester' + Game.time;
         console.log('Spawning new harvester: ' + newName);
-        Game.spawns['h3nH0us3'].spawnCreep([WORK,CARRY,MOVE], newName, 
+        Game.spawns['Spawn1'].spawnCreep([WORK,CARRY,MOVE], newName, 
             {memory: {role: 'harvester'}});
     }
     
-    if(Game.spawns['h3nH0us3'].spawning) { 
-        var spawningCreep = Game.creeps[Game.spawns['h3nH0us3'].spawning.name];
-        Game.spawns['h3nH0us3'].room.visual.text(
+    if(Game.spawns['Spawn1'].spawning) { 
+        var spawningCreep = Game.creeps[Game.spawns['Spawn1'].spawning.name];
+        Game.spawns['Spawn1'].room.visual.text(
             'ðŸ› ï¸' + spawningCreep.memory.role,
-            Game.spawns['h3nH0us3'].pos.x + 1, 
-            Game.spawns['h3nH0us3'].pos.y, 
+            Game.spawns['Spawn1'].pos.x + 1, 
+            Game.spawns['Spawn1'].pos.y, 
             {align: 'left', opacity: 0.8});
     }
 
@@ -144,16 +144,16 @@ module.exports.loop = function () {
     if(upgraders.length < 2) {
         var newName = 'Upgrader' + Game.time;
         console.log('Spawning new upgrader: ' + newName);
-        Game.spawns['h3nH0us3'].spawnCreep([WORK,CARRY,MOVE], newName, 
+        Game.spawns['Spawn1'].spawnCreep([WORK,CARRY,MOVE], newName, 
             {memory: {role: 'upgrader'}});
     }
     
-    if(Game.spawns['h3nH0us3'].spawning) { 
-        var spawningCreep = Game.creeps[Game.spawns['h3nH0us3'].spawning.name];
-        Game.spawns['h3nH0us3'].room.visual.text(
+    if(Game.spawns['Spawn1'].spawning) { 
+        var spawningCreep = Game.creeps[Game.spawns['Spawn1'].spawning.name];
+        Game.spawns['Spawn1'].room.visual.text(
             'ðŸ› ï¸' + spawningCreep.memory.role,
-            Game.spawns['h3nH0us3'].pos.x + 1, 
-            Game.spawns['h3nH0us3'].pos.y, 
+            Game.spawns['Spawn1'].pos.x + 1, 
+            Game.spawns['Spawn1'].pos.y, 
             {align: 'left', opacity: 0.8});
     }
 }
