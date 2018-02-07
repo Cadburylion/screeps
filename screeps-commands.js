@@ -1,5 +1,9 @@
 // spawn creep -bodyCost: move: 50, carry: 50, work: 100, heal: 250, tough: 10, attack: 80, ranged_attack: 150, Claim: 600
 Game.spawns['spawnName'].spawnCreep([WORK, CARRY, MOVE], 'name')
+//It is important to note that the order in which parts are added to a creep is important! The sequence of parts dictate 
+//which components will be damaged first when a creep is attacked. If a part takes 100 points of damage, it will be 
+//completely disabled - the creep may no longer use that part's ability.
+
 
 // spawn creep with role
 Game.spawns['spawnName'].spawnCreep([WORK, CARRY, MOVE], 'name', {memory: {role: 'role'}})
