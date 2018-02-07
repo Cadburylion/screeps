@@ -23,5 +23,5 @@ module.exports.loop = function () {
             Game.spawns['Spawn1'].pos.x + 1, 
             Game.spawns['Spawn1'].pos.y, 
             {align: 'left', opacity: 0.8});
-    
+    }
     
