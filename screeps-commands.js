@@ -6,3 +6,7 @@ Game.spawns['spawnName'].spawnCreep([WORK, CARRY, MOVE], 'name', {memory: {role:
 
 // change creep role
 Game.screeps['name'].memory.role = 'role'
+
+//Killit!! 
+Game.creeps['name'].suicide()
+
