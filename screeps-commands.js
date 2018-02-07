@@ -1,4 +1,4 @@
-// spawn creep
+// spawn creep -bodyCost: move: 50, carry: 50, work: 20, heal: 200, tough: 20, attack: 80, ranged_attack: 150
 Game.spawns['spawnName'].spawnCreep([WORK, CARRY, MOVE], 'name')
 
 // spawn creep with role
