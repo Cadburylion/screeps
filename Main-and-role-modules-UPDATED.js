@@ -28,8 +28,8 @@ module.exports.loop = function () {
             {memory: {role: 'harvester'}});
     }
     
-    if(Game.spawns['h3nH0us3'].spawning) { 
-        var spawningCreep = Game.creeps[Game.spawns['h3nH0us3'].spawning.name];
+    if(Game.spawns['Spawn1'].spawning) { 
+        var spawningCreep = Game.creeps[Game.spawns['Spawn1'].spawning.name];
         Game.spawns['Spawn1'].room.visual.text(
             'ðŸ› ï¸' + spawningCreep.memory.role,
             Game.spawns['Spawn1'].pos.x + 1, 
@@ -65,7 +65,7 @@ module.exports.loop = function () {
     }
     
     if(Game.spawns['Spawn1'].spawning) { 
-        var spawningCreep = Game.creeps[Game.spawns['h3nH0us3'].spawning.name];
+        var spawningCreep = Game.creeps[Game.spawns['Spawn1'].spawning.name];
         Game.spawns['Spawn1'].room.visual.text(
             'ðŸ› ï¸' + spawningCreep.memory.role,
             Game.spawns['Spawn1'].pos.x + 1, 
@@ -97,7 +97,7 @@ module.exports.loop = function () {
             {memory: {role: 'upgrader2'}});
     }
      if(Game.spawns['Spawn1'].spawning) { 
-        var spawningCreep = Game.creeps[Game.spawns['h3nH0us3'].spawning.name];
+        var spawningCreep = Game.creeps[Game.spawns['Spawn1'].spawning.name];
         Game.spawns['Spawn1'].room.visual.text(
             'ðŸ› ï¸' + spawningCreep.memory.role,
             Game.spawns['Spawn1'].pos.x + 1, 
