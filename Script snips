@@ -1,0 +1,20 @@
+//These arent full scripts but bits to add to them.
+
+
+//Main code
+module.exports.loop = function () {
+//Use to remove a fallen creeps existing memory
+    var harvesters = _.filter(Game.creeps, (creep) => creep.memory.role == 'harvester');
+    console.log('Harvesters: ' + harvesters.length);
+
+
+//Create a new Harvester if you have less than 2, with a generic harvester name and auto sets his role
+    if(harvesters.length < 2) {
+        var newName = 'Harvester' + Game.time;
+        console.log('Spawning new harvester: ' + newName);
+        Game.spawns['Spawn1'].spawnCreep([WORK,CARRY,MOVE], newName, 
+            {memory: {role: 'harvester'}});        
+    }
+    
+    
+    
