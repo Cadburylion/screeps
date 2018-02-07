@@ -49,3 +49,39 @@ var upgraders = _.filter(Game.creeps, (creep) => creep.memory.role == 'upgrader'
             {align: 'left', opacity: 0.8});
     }
 }
+
+
+
+
+
+//Fire your tower against any Hostile creeps
+module.exports.loop = function () {
+
+    var tower = Game.getObjectById('f7cd3e14d112925cdd31cc31');
+    if(tower) {
+        var closestHostile = tower.pos.findClosestByRange(FIND_HOSTILE_CREEPS);
+        if(closestHostile) {
+            tower.attack(closestHostile);
+        }
+    }
+
+
+
+//Use your tower to repair nearby walls and fire against nearby hostile creeps
+module.exports.loop = function () {
+
+    var tower = Game.getObjectById('f7cd3e14d112925cdd31cc31');
+    if(tower) {
+        var closestDamagedStructure = tower.pos.findClosestByRange(FIND_STRUCTURES, {
+            filter: (structure) => structure.hits < structure.hitsMax
+        });
+        if(closestDamagedStructure) {
+            tower.repair(closestDamagedStructure);
+        }
+
+        var closestHostile = tower.pos.findClosestByRange(FIND_HOSTILE_CREEPS);
+        if(closestHostile) {
+            tower.attack(closestHostile);
+        }
+    } 
+
