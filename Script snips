@@ -16,12 +16,12 @@ module.exports.loop = function () {
             {memory: {role: 'harvester'}});        
     }
    //actually starts the build of the new harvester
-   if(Game.spawns['h3nH0us3'].spawning) { 
-        var spawningCreep = Game.creeps[Game.spawns['h3nH0us3'].spawning.name];
-        Game.spawns['spawn1'].room.visual.text(
+   if(Game.spawns['Spawn1'].spawning) { 
+        var spawningCreep = Game.creeps[Game.spawns['Spawn1'].spawning.name];
+        Game.spawns['Spawn1'].room.visual.text(
             'ðŸ› ï¸' + spawningCreep.memory.role,
-            Game.spawns['h3nH0us3'].pos.x + 1, 
-            Game.spawns['h3nH0us3'].pos.y, 
+            Game.spawns['Spawn1'].pos.x + 1, 
+            Game.spawns['Spawn1'].pos.y, 
             {align: 'left', opacity: 0.8});
     
     
